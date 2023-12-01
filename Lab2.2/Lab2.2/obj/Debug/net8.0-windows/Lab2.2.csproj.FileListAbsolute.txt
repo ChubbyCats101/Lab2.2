@@ -1,0 +1,17 @@
+D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\bin\Debug\net8.0-windows\Lab2.2.exe
+D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\bin\Debug\net8.0-windows\Lab2.2.deps.json
+D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\bin\Debug\net8.0-windows\Lab2.2.runtimeconfig.json
+D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\bin\Debug\net8.0-windows\Lab2.2.dll
+D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\bin\Debug\net8.0-windows\Lab2.2.pdb
+D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\obj\Debug\net8.0-windows\Lab2._2.Form1.resources
+D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\obj\Debug\net8.0-windows\Lab2.2.csproj.GenerateResource.cache
+D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\obj\Debug\net8.0-windows\Lab2.2.GeneratedMSBuildEditorConfig.editorconfig
+D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\obj\Debug\net8.0-windows\Lab2.2.AssemblyInfoInputs.cache
+D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\obj\Debug\net8.0-windows\Lab2.2.AssemblyInfo.cs
+D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\obj\Debug\net8.0-windows\Lab2.2.csproj.CoreCompileInputs.cache
+D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\obj\Debug\net8.0-windows\Lab2.2.dll
+D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\obj\Debug\net8.0-windows\refint\Lab2.2.dll
+D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\obj\Debug\net8.0-windows\Lab2.2.pdb
+D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\obj\Debug\net8.0-windows\Lab2.2.genruntimeconfig.cache
+D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\obj\Debug\net8.0-windows\ref\Lab2.2.dll
+D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\obj\Debug\net8.0-windows\Lab2._2.Properties.Resources.resources
