@@ -15,3 +15,4 @@ D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\obj\Debug\n
 D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\obj\Debug\net8.0-windows\Lab2.2.genruntimeconfig.cache
 D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\obj\Debug\net8.0-windows\ref\Lab2.2.dll
 D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\obj\Debug\net8.0-windows\Lab2._2.Properties.Resources.resources
+D:\งานวิชาต่างๆ\GitCats\Lab2.2\Lab2.2\Lab2.2\obj\Debug\net8.0-windows\Lab2.2.sourcelink.json

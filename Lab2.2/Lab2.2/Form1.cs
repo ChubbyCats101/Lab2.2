@@ -1,26 +1,16 @@
 ﻿using System.Diagnostics;
+using System.Xml.Linq;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace Lab2._2
 {
     public partial class Form1 : Form
     {
+        internal StudentInfo INFO = new StudentInfo();
+        internal GradeCal GPACAL = new GradeCal();
         int arrayIndex = 0;
-        int Max = 0;
-        int Min = 0;
-        string[] arrName = new string[10000];
-        string[] arrID = new string[10000];
-        int[] arrScore = new int[10000];
-        int SUM = 0;
-        int na = 0;
-        int nbplus = 0;
-        int nb = 0;
-        int ncplus = 0;
-        int nc = 0;
-        int ndplus = 0;
-        int nd = 0;
-        int nf = 0;
-        string Grade;
-
+        int na, nbplus, nb, ncplus, nc, ndplus, nd, nf;
+        string grade;
         public Form1()
         {
             InitializeComponent();
@@ -32,81 +22,36 @@ namespace Lab2._2
             string inputID = infoTextBoxID.Text;
             int inputScore = int.Parse(infoTextBoxSC.Text);
 
-            arrID[arrayIndex] = inputID;
-            arrName[arrayIndex] = inputName;
-            arrScore[arrayIndex] = inputScore;
-            arrayIndex++;
-
             infoTextBoxSC.Text = inputScore.ToString();
 
-            if (inputScore > Max)
-            {
-                Max = inputScore;
-                MaxID.Text = inputID;
-                MaxNM.Text = inputName;
-                MaxSC.Text = inputScore.ToString();
-                Min = Max;
-            }
-
-            if (inputScore < Min)
-            {
-                Min = inputScore;
-                MinID.Text = inputID;
-                MinNM.Text = inputName;
-                MinSC.Text = inputScore.ToString();
-            }
-
-            int SUM = Max + Min;
-            double SUM2 = SUM / 2;
-            string SUM3 = SUM2.ToString();
-            SCaverage.Text = SUM3;
-
-            if (inputScore >= 80 && inputScore <= 100)
-            {
-                Grade = "A";
-                na++;
-            }
-            else if (inputScore >= 75 && inputScore < 79)
-            {
-                Grade = "B+";
-                nbplus++;
-            }
-            else if (inputScore >= 70 && inputScore < 74)
-            {
-                Grade = "B";
-                nb++;
-            }
-            else if (inputScore >= 65 && inputScore < 69)
-            {
-                Grade = "C+";
-                ncplus++;
-            }
-            else if (inputScore >= 60 && inputScore < 64)
-            {
-                Grade = "C";
-                nc++;
-            }
-            else if (inputScore >= 55 && inputScore < 59)
-            {
-                Grade = "D+";
-                ndplus++;
-            }
-            else if (inputScore >= 50 && inputScore < 54)
-            {
-                Grade = "D";
-                nd++;
-            }
-            else
-            {
-                Grade = "F";
-                nf++;
-            }
-
-            double v = (na * 4.0) + (nbplus * 3.5) + (nb * 3.0) + (ncplus * 2.5) + (nc * 2.0) + (ndplus * 1.5) + (nd * 1.0);
-            int GPA = (int)v;
-            double GPA2 = GPA / arrayIndex;
-            string GPA3 = GPA2.ToString();
-            GPAaverage.Text = GPA3;
+            //ดึงมากจากclass StudentInfo
+            INFO.showInfo(inputScore, inputID,inputName);
+            string MaxName = INFO.GetMaxStudentName();
+            string MinName = INFO.GetMinStudentName();
+            string MaxstudentID = INFO.GetMaxStudentID();
+            string MinstudentID = INFO.GetMinStudentID();
+            string MaxScore = Convert.ToString(INFO.GetMaxScore());
+            string MinScore = Convert.ToString(INFO.GetMinScore());
+            string ScoreAverage = Convert.ToString(INFO.GetAverageScore());
+            MaxNM.Text = MaxName;
+            MinNM.Text = MinName;
+            MaxID.Text = MaxstudentID;
+            MinID.Text = MinstudentID;
+            MaxSC.Text = MaxScore;
+            MinSC.Text = MinScore;
+            SCaverage.Text = ScoreAverage;
+            arrayIndex++;
+            //ดึงมาจากclass GradeCal
+            GPACAL.CalculateGrade(inputScore);
+            int na = GPACAL.GetGradeCountA();
+            int nbplus = GPACAL.GetGradeCountBPlus();
+            int nb = GPACAL.GetGradeCountB();
+            int ncplus = GPACAL.GetGradeCountCPlus();
+            int nc = GPACAL.GetGradeCountC();
+            int ndplus = GPACAL.GetGradeCountDPlus();
+            int nd = GPACAL.GetGradeCountD();
+            int nf = GPACAL.GetGradeCountF();
+            int GPA_average =GPACAL.GetGPAaverage();
 
             textBoxA.Text = na.ToString();
             textBoxBplus.Text = nbplus.ToString();
@@ -116,8 +61,8 @@ namespace Lab2._2
             textBoxDplus.Text = ndplus.ToString();
             textBoxD.Text = nd.ToString();
             textBoxF.Text = nf.ToString();
+            GPAaverage.Text = GPA_average.ToString();
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             infoTextBoxID.Clear();
